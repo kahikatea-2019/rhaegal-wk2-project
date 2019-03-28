@@ -23,18 +23,23 @@ server.use(express.urlencoded({ extended: true }))
 server.get('/', (req, res) => {
   res.redirect('/drink')
 })
+
 server.get('/drink', (req, res) => {
   res.render('partials/form', data)
 })
+
 // Page displaying drink after recieving POST
 server.get('/drink/:id', (req, res) => {
-   res.render('partials/result', data)
+  const getId = data.drinks.find(i => i.id === Number(req.params.id))
+  res.render('partials/result', getId)
 })
+
 server.post('/drink', (req, res) => {
   const ingredient = req.body.ingredient
   const newArr = data.drinks.find((i, idx) => i.ingredients[idx] === ingredient)
   console.log(newArr)
   const id = newArr.id
+  console.log(id)
   // const id = Math.random(newArr)
-  res.redirect(`drink/:${id}`)
+  res.redirect(`drink/${id}`)
 })
