@@ -1,0 +1,35 @@
+{
+  "name": "rhaegal-wk2-project",
+  "version": "1.0.0",
+  "description": "drinks",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest index --watchAll",
+    "start": "node .",
+    "dev": "nodemon index"  
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kahikatea-2019/rhaegal-wk2-project.git"
+  },
+  "keywords": [
+    "drinking",
+    "drinks"
+  ],
+  "author": "bambam-john-ihaka-azaan-philipl",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kahikatea-2019/rhaegal-wk2-project/issues"
+  },
+  "homepage": "https://github.com/kahikatea-2019/rhaegal-wk2-project#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "handlebars": "^4.1.1"
+  },
+  "devDependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "jest": "^24.5.0",
+    "nodemon": "^1.18.10",
+    "supertest": "^4.0.2"
+  }
+}
