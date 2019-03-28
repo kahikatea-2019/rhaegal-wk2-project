@@ -1,6 +1,34 @@
 {
-  "id": "1",
-  "name": "margarita",
-  "image": "url",
-  "ingredients": ["salt", "tequila", "orange liqueur", "lime juice"]
+  "drinks": [
+    {
+      "id": "0",
+      "name": "Margarita",
+      "image": "https://cdn.liquor.com/wp-content/uploads/2018/04/23134943/Margarita-720x720-recipe-v2.jpg",
+      "ingredients": ["salt", "tequila", "orange liqueur", "lime juice"]
+    },
+    {
+      "id": "1",
+      "name": "Prickly Pear",
+      "image": "https://www.loveandoliveoil.com/wp-content/uploads/2016/02/prickly-pear-cocktail-600x900.jpg",
+      "ingredients": ["mezcal", "cactus", "salt"]
+    },
+    {
+      "id": "2",
+      "name": "Manhattan",
+      "image": "https://cdn.liquor.com/wp-content/uploads/2018/05/10144903/Manhattan-720x720-recipe.jpg",
+      "ingredients": ["bourbon", "vermouth", "bitters", "lemon rind"]
+    },
+    {
+      "id": "3",
+      "name": "McQueen",
+      "image": "https://cdn.liquor.com/wp-content/uploads/2018/05/10144903/Manhattan-720x720-recipe.jpg",
+      "ingredients": ["mezcal", "scotch", "agave syrup", "grapefruit"]
+    },
+    {
+      "id": "4",
+      "name": "Rum and Coke",
+      "image": "https://www.thespruceeats.com/thmb/ivQKexX_FA6-Wqc6grbJX4UNe44=/960x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/rum-coke-5a8f3360875db90036ac14ca.jpg",
+      "ingredients": ["rum", "coke", "southern tears", "lime"]
+    }
+  ]
 }
