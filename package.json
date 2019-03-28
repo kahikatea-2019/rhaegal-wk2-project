@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest index --watchAll",
     "start": "node .",
-    "dev": "nodemon index"  
+    "dev": "nodemon index"
   },
   "repository": {
     "type": "git",
@@ -24,6 +24,7 @@
   "homepage": "https://github.com/kahikatea-2019/rhaegal-wk2-project#readme",
   "dependencies": {
     "express": "^4.16.4",
+    "express-handlebars": "^3.0.2",
     "handlebars": "^4.1.1"
   },
   "devDependencies": {

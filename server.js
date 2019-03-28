@@ -1,6 +1,6 @@
 const express = require('express')
-// const hbs = require('express-handlebars')
-const server = express()
+const server = express() 
+const hbs = require('express-handlebars')
 
 module.exports = server
 
