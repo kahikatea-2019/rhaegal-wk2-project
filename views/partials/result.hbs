@@ -1,1 +1,14 @@
-<h2>You could make a {{drinks[name]}}</h2>
+<h2>You could make a {{drinks[id][name]}}</h2>
+<div>
+  <div class="image">
+    <img src="{{drinks[id][image]}}" alt="picture of a {{drinks[id][name]}}" style="width: 300px"/>
+  </div>
+  <div class="ingredients">
+    <ul>
+      <h3>Ingredients</h3>
+      {{#each drinks[id][ingredients]}}
+      <li>{{this}}</li>
+      {{/each}}
+    </ul>
+  </div>
+</div>
