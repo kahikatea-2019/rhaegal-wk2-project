@@ -28,13 +28,13 @@ server.get('/drink', (req, res) => {
 })
 // Page displaying drink after recieving POST
 server.get('/drink/:id', (req, res) => {
-  // res.render()
+   res.render('partials/result', data)
 })
 server.post('/drink', (req, res) => {
   const ingredient = req.body.ingredient
-  console.log(ingredient)
-  res.send('recieved')
-  // const newArr = data.ingredients.filter(i => {
-  //   if()
-  // })
+  const newArr = data.drinks.find((i, idx) => i.ingredients[idx] === ingredient)
+  console.log(newArr)
+  const id = newArr.id
+  // const id = Math.random(newArr)
+  res.redirect(`drink/:${id}`)
 })
