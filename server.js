@@ -16,7 +16,7 @@ server.engine('hbs', hbs({
 server.set('view engine', 'hbs')
 
 server.use(express.static('public'))
-server.use(express.urlencoded({ extended: false }))
+server.use(express.urlencoded({ extended: true }))
 
 // Routes
 // Home page
@@ -24,15 +24,17 @@ server.get('/', (req, res) => {
   res.redirect('/drink')
 })
 server.get('/drink', (req, res) => {
-  res.send('hello World')
+  res.render('partials/form', data)
 })
 // Page displaying drink after recieving POST
 server.get('/drink/:id', (req, res) => {
   // res.render()
 })
-// server.post('/drink', (req, res) => {
-//   const ingredient = req.body.ingredient
-//   const newArr = data.ingredients.filter(i => {
-//     if()
-//   })
-// })
+server.post('/drink', (req, res) => {
+  const ingredient = req.body.ingredient
+  console.log(ingredient)
+  res.send('recieved')
+  // const newArr = data.ingredients.filter(i => {
+  //   if()
+  // })
+})
