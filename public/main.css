@@ -1,5 +1,18 @@
+/* 
+Colour Theme:
+  Green shade: rgba(153,184,152)
+  Cream shade: rgba(254,206,168)
+  Pink Shade: rgba(255,132,124)
+  Red/Rose Shade: rgba(232,74,95)
+  Dark Navy Shade: rgba(42,54,59)
+*/
+
 body {
-  background-color: white;
+  background-color: #fecea8;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='50' height='25' viewBox='0 0 50 25'%3E%3Cdefs%3E%3Crect stroke='%23fecea8' stroke-width='0.1' width='1' height='1' id='s'/%3E%3Cpattern id='a' width='2' height='2' patternUnits='userSpaceOnUse'%3E%3Cg stroke='%23fecea8' stroke-width='0.1'%3E%3Crect fill='%23f9caa5' width='1' height='1'/%3E%3Crect fill='%23fecea8' width='1' height='1' x='1' y='1'/%3E%3Crect fill='%23f4c6a1' width='1' height='1' y='1'/%3E%3Crect fill='%23efc29e' width='1' height='1' x='1'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='b' width='5' height='11' patternUnits='userSpaceOnUse'%3E%3Cg fill='%23eabe9b'%3E%3Cuse xlink:href='%23s' x='2' y='0'/%3E%3Cuse xlink:href='%23s' x='4' y='1'/%3E%3Cuse xlink:href='%23s' x='1' y='2'/%3E%3Cuse xlink:href='%23s' x='2' y='4'/%3E%3Cuse xlink:href='%23s' x='4' y='6'/%3E%3Cuse xlink:href='%23s' x='0' y='8'/%3E%3Cuse xlink:href='%23s' x='3' y='9'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='c' width='7' height='7' patternUnits='userSpaceOnUse'%3E%3Cg fill='%23e5b997'%3E%3Cuse xlink:href='%23s' x='1' y='1'/%3E%3Cuse xlink:href='%23s' x='3' y='4'/%3E%3Cuse xlink:href='%23s' x='5' y='6'/%3E%3Cuse xlink:href='%23s' x='0' y='3'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='d' width='11' height='5' patternUnits='userSpaceOnUse'%3E%3Cg fill='%23fecea8'%3E%3Cuse xlink:href='%23s' x='1' y='1'/%3E%3Cuse xlink:href='%23s' x='6' y='3'/%3E%3Cuse xlink:href='%23s' x='8' y='2'/%3E%3Cuse xlink:href='%23s' x='3' y='0'/%3E%3Cuse xlink:href='%23s' x='0' y='3'/%3E%3C/g%3E%3Cg fill='%23e0b594'%3E%3Cuse xlink:href='%23s' x='8' y='3'/%3E%3Cuse xlink:href='%23s' x='4' y='2'/%3E%3Cuse xlink:href='%23s' x='5' y='4'/%3E%3Cuse xlink:href='%23s' x='10' y='0'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='e' width='47' height='23' patternUnits='userSpaceOnUse'%3E%3Cg fill='%2399b898'%3E%3Cuse xlink:href='%23s' x='2' y='5'/%3E%3Cuse xlink:href='%23s' x='23' y='13'/%3E%3Cuse xlink:href='%23s' x='4' y='18'/%3E%3Cuse xlink:href='%23s' x='35' y='9'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='f' width='61' height='31' patternUnits='userSpaceOnUse'%3E%3Cg fill='%2399b898'%3E%3Cuse xlink:href='%23s' x='16' y='0'/%3E%3Cuse xlink:href='%23s' x='13' y='22'/%3E%3Cuse xlink:href='%23s' x='44' y='15'/%3E%3Cuse xlink:href='%23s' x='12' y='11'/%3E%3C/g%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23a)' width='50' height='25'/%3E%3Crect fill='url(%23b)' width='50' height='25'/%3E%3Crect fill='url(%23c)' width='50' height='25'/%3E%3Crect fill='url(%23d)' width='50' height='25'/%3E%3Crect fill='url(%23e)' width='50' height='25'/%3E%3Crect fill='url(%23f)' width='50' height='25'/%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
+  /* Background from www.svgbackgrounds.com */
 }
 .outerForm {
   display: flex;
@@ -8,11 +21,24 @@ body {
   align-content: center;
   justify-content: center;
   width: 100%;
-  height: 450px;
+  height: 85vh;
 }
 .innerForm {
   padding: 15px;
   width: 350px;
   text-align: center;
-  background-color: rgba(201, 52, 19);
+  background-color: rgba(153, 184, 152, 0.9);
+  border-top-left-radius: 95.5% 10px;
+  border-top-right-radius: 95.5% 10px;
+  border-bottom-left-radius: 95.5% 10px;
+  border-bottom-right-radius: 95.5% 10px;
+  box-shadow: inset 5px 0px 10px -5px rgb(38, 56, 38),
+              inset -5px 0 10px -5px rgba(153, 184, 152),
+              inset 0px -5px 10px 0px rgba(153, 184, 152),
+              0 0 1px 2px rgba(153, 184, 152),
+              0 0 1px 2px rgba(153, 184, 152);
+}
+
+h1 {
+  
 }
