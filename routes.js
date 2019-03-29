@@ -20,16 +20,19 @@ router.get('/drink/:id', (req, res) => {
 
 router.post('/drink', (req, res) => {
   const ingredient = req.body.ingredient
-  let returnedDrinkId
+  let randomId
+  const newArr = []
   data.drinks.filter(current => {
     current.ingredients.find(string => {
       if (string === ingredient) {
-        returnedDrinkId = current.id
+        newArr.push([current.id])
+        randomId = newArr[Math.floor(Math.random() * newArr.length)]
+        console.log(randomId)
       }
     })
   })
   // const id = Math.random(newArr)
-  res.redirect(`drink/${returnedDrinkId}`)
+  res.redirect(`drink/${randomId}`)
 })
 // router.get('/drink/add', (req, res) => {
 //   res.render('add-form', data)
