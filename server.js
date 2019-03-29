@@ -30,15 +30,23 @@ server.get('/drink', (req, res) => {
 
 // Page displaying drink after recieving POST
 server.get('/drink/:id', (req, res) => {
-  const getId = data.drinks.find(i => i.id === Number(req.params.id))
+  const getId = data.drinks.find(i => i.id === (req.params.id))
   res.render('partials/result', getId)
 })
 
 server.post('/drink', (req, res) => {
   const ingredient = req.body.ingredient
-  const newArr = data.drinks.find((i, idx) => i.ingredients[idx] === ingredient)
-  console.log(newArr)
-  const id = newArr.id
+  let returnedDrinkId
+  data.drinks.filter(current => {
+    // Increment through ingredients of current and check if it is ingredients matches
+    current.ingredients.find(string => {
+      if (string === ingredient) {
+        returnedDrinkId = current.id
+      }
+    })
+  })
+
+  const id = returnedDrinkId
   console.log(id)
   // const id = Math.random(newArr)
   res.redirect(`drink/${id}`)
