@@ -27,7 +27,6 @@ router.post('/drink', (req, res) => {
       if (string === ingredient) {
         newArr.push([current.id])
         randomId = newArr[Math.floor(Math.random() * newArr.length)]
-        console.log(randomId)
       }
     })
   })
