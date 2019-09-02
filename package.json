@@ -25,11 +25,12 @@
   "dependencies": {
     "express": "^4.17.1",
     "express-handlebars": "^3.1.0",
-    "handlebars": "^4.1.2"
+    "handlebars": "^4.1.2",
+    "mixin-deep": "^2.0.1"
   },
   "devDependencies": {
     "cheerio": "^1.0.0-rc.3",
-    "jest": "^24.8.0",
+    "jest": "^24.9.0",
     "nodemon": "^1.19.1",
     "supertest": "^4.0.2"
   }
