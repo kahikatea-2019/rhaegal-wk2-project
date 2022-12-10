@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/kahikatea-2019/rhaegal-wk2-project#readme",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "express-handlebars": "^3.1.0",
     "handlebars": "^4.3.0",
     "mixin-deep": "^2.0.1"
